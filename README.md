@@ -1,7 +1,7 @@
 # V4L2 Logitech Webcam Scripts
 
 This is a project with simple Bash shell convenience scripts to set and control
-a Logitech web camera. 
+a Logitech web camera using v4l2-ctl. 
 Specifically, I wrote these scripts to control an HD Pro Webcam C920.
 
 ## Introduction 
@@ -17,6 +17,7 @@ Those "sane" default values are hard-coded at the top of each script to make the
 
 Scripts are available to get and set the camera's:
 
+* Brightness
 * Exposure
 * Focus
 * Panning left and right
@@ -32,6 +33,12 @@ You'll need to edit the scripts for a camera on a different device.
 ## Scripts
 
 List of the shell scripts with guides on how to use them.
+
+### csbright.sh
+
+Gets and sets the brightness level.
+The Logitech C920 supports values of 0 to 255.
+The default and "sane" value is 128.
 
 ### csexp.sh  
 
